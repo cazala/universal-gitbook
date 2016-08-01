@@ -65,19 +65,19 @@ npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform
 
 add .babelrc
 
-{
+`{`
 
-"presets": \["es2015", "react"\],
+`"presets": ["es2015", "react"],`
 
-"plugins": \[
+`"plugins": [`
 
-"transform-object-rest-spread",
+`"transform-object-rest-spread",`
 
-"jsx-display-if"
+`"jsx-display-if"`
 
-\]
+`]`
 
-}
+`}`
 
 add loader to webpack.config.js
 
