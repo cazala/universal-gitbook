@@ -65,9 +65,7 @@ npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform
 
 add .babelrc
 
-```
 
-```
 
 {
 
