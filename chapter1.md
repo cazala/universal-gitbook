@@ -32,8 +32,6 @@ ignore dist
 
 build & start scripts
 
-
-
 ```js
 var webpack = require('webpack') 
 module.exports = { 
@@ -51,11 +49,11 @@ module.exports = {
 }
 ```
 
-test it:
+**Test It**
 
-index.js
+create an `index.js` file and write in it `console.log('hello world’)`
 
-console.log\('hello world’\)
+now run `npm run build` and then node `./dist/bundle.js`
 
 tag \#webpack
 
