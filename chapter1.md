@@ -1,1 +1,612 @@
-# First Chapter
+# Chapter 0 - Setup
+
+
+
+### **Init**
+
+master
+
+branch setup
+
+
+
+nvm use 6
+
+git init
+
+add readme
+
+
+
+npm init
+
+ignore node\_modules
+
+package.json
+
+
+
+tag \#start
+
+
+
+### **Webpack**
+
+install webpack —save-dev
+
+
+
+mkdir src & dist
+
+webpack.config.js
+
+ignore dist
+
+build & start scripts
+
+```
+
+```
+
+
+
+
+
+var webpack = require\('webpack'\)
+
+module.exports = {
+
+ context: \_\_dirname,
+
+ entry: '.\/src\/index.js',
+
+ output: {
+
+ path: 'dist',
+
+ filename: 'bundle.js',
+
+ },
+
+ plugins: \[
+
+ new webpack.NoErrorsPlugin\(\)
+
+ \],
+
+ resolve: {
+
+ extensions: \['', '.js', '.json'\],
+
+ modulesDirectories: \['.', 'src', 'node\_modules'\]
+
+ },
+
+}
+
+
+
+test it:
+
+
+
+
+
+index.js
+
+console.log\('hello world’\)
+
+
+
+
+
+tag \#webpack
+
+
+
+
+
+**Babel**
+
+
+
+
+
+setup\/babel branch
+
+npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform-object-rest-spread babel-polyfill babel-preset-es2015 babel-preset-react babel-register babel-runtime babel-loader
+
+
+
+
+
+add .babelrc
+
+
+
+
+
+
+
+
+
+{
+
+
+
+
+
+ "presets": \["es2015", "react"\],
+
+
+
+
+
+ "plugins": \[
+
+
+
+
+
+ "transform-object-rest-spread",
+
+
+
+
+
+ "jsx-display-if"
+
+
+
+
+
+ \]
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+add loader to webpack.config.js
+
+
+
+
+
+module: {
+
+ loaders: \[
+
+ {
+
+ test: \/\.js\/,
+
+ loaders: \['babel’\],
+
+ exclude: \/node\_modules\/
+
+ }
+
+ \]
+
+ }
+
+
+
+
+
+test it:
+
+
+
+
+
+index.js
+
+const obj = { a: 1, b:2, c:3 }
+
+const { a, ...rest } = obj
+
+const spread = { ...rest, d: 4 }
+
+console.log\(rest\) \/\/ { b:2, c: 3}
+
+console.log\(spread\) \/\/ { b:2, c: 3, d: 4 }
+
+
+
+
+
+tag \#babel
+
+
+
+
+
+**PostCSS**
+
+
+
+
+
+setup\/postcss branch
+
+npm install --save-dev autoprefixer css-loader style-loader url-loader postcss-import postcss-loader postcss-mixins postcss-nested postcss-simple-vars
+
+
+
+
+
+add loader to webpack.config.js
+
+
+
+
+
+{
+
+ test: \/\(\.scss\|\.css\)$\/,
+
+ loaders: \['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=\[name\]\_\_\[local\]\_\_\_\[hash:base64:5\]', 'postcss'\]
+
+ },
+
+postcss: \[
+
+ require\('autoprefixer'\),
+
+ require\('postcss-import'\),
+
+ require\('postcss-nested'\),
+
+ require\('postcss-simple-vars'\)
+
+ \]
+
+
+
+
+
+resolve.extensions ‘css’, ‘scss'
+
+
+
+
+
+test it:
+
+
+
+
+
+index.css
+
+.red {
+
+ color: red;
+
+}
+
+
+
+
+
+index.js
+
+import styles from '.\/index.css'
+
+console.log\(styles\) \/\/ { red: '...' }
+
+window.onload = \(\) =&gt; document.body.classList.add\(styles.red\)
+
+
+
+
+
+index.html
+
+&lt;script src="..\/dist\/bundle.js"&gt;&lt;\/script&gt;
+
+&lt;body&gt;
+
+ Hello World
+
+&lt;\/body&gt;
+
+
+
+
+
+npm run build
+
+open src\/index.html
+
+
+
+
+
+tag \#postcss
+
+
+
+
+
+**ESLint**
+
+
+
+
+
+setup\/eslint branch
+
+npm install --save-dev eslint babel-eslint eslint-config-standard eslint-config-standard-react eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-watch
+
+
+
+
+
+add .eslintrc
+
+
+
+
+
+{
+
+ "env": {
+
+ "browser": true,
+
+ "node": true
+
+ },
+
+ "parser": "babel-eslint",
+
+ "extends": \["standard", "standard-react"\],
+
+ "rules": {
+
+ "comma-dangle" : \[0, "always-multiline"\],
+
+ "semi": \[2, "never"\],
+
+ "no-extra-semi": 2,
+
+ "jsx-quotes": \[2, "prefer-single"\],
+
+ "react\/jsx-boolean-value": \[0, "always"\],
+
+ "react\/jsx-max-props-per-line": \[2, {"maximum": 4}\],
+
+ "react\/self-closing-comp": 2,
+
+ "react\/jsx-indent-props": \[2, 2\],
+
+ "react\/sort-comp": 2
+
+ }
+
+}
+
+
+
+
+
+test it:
+
+
+
+
+
+const a = 1
+
+const b = 2
+
+const c = 3 \/\/ ‘c’ is defined but never used
+
+console.log\(a + b\)
+
+
+
+
+
+tag \#eslint
+
+
+
+
+
+**DevServer**
+
+
+
+
+
+setup\/dev-server branch
+
+
+
+
+
+npm install --save express
+
+npm install --save-dev redbox-react webpack-dev-middleware webpack-hot-middleware
+
+
+
+
+
+add dev-server.js
+
+
+
+
+
+var webpack = require\('webpack'\)
+
+var webpackDevMiddleware = require\('webpack-dev-middleware'\)
+
+var webpackHotMiddleware = require\('webpack-hot-middleware'\)
+
+var config = require\('.\/webpack.config.js'\)
+
+var Express = require\('express'\)
+
+
+
+
+
+var app = new Express\(\)
+
+var port = process.env.PORT \|\| 9999
+
+var compiler = webpack\(config\)
+
+var dev = webpackDevMiddleware\(compiler, { noInfo: true, publicPath: config.output.publicPath }\)
+
+var hot = webpackHotMiddleware\(compiler\)
+
+
+
+
+
+app.use\(dev\)
+
+app.use\(hot\)
+
+
+
+
+
+app.get\('\*', function \(req, res\) {
+
+ res.send\(\`
+
+ &lt;html&gt;
+
+ &lt;head&gt;
+
+ &lt;title&gt;Webpack Development Server&lt;\/title&gt;
+
+ &lt;\/head&gt;
+
+ &lt;body&gt;
+
+ &lt;div id="root"&gt;
+
+ Hello World
+
+ &lt;\/div&gt;
+
+ &lt;\/body&gt;
+
+ &lt;script src="\/bundle.js" async defer&gt;&lt;\/script&gt;
+
+ &lt;\/html&gt;
+
+ \`\)
+
+}\)
+
+
+
+
+
+app.listen\(port, \(error\) =&gt; {
+
+ if \(error\) {
+
+ console.error\(error\)
+
+ return
+
+ }
+
+ console.info\('Open up http:\/\/localhost:%s\/ in your browser.', port\)
+
+}\)
+
+
+
+
+
+change webpack.config.js
+
+
+
+
+
+devtool: 'cheap-module-eval-source-map',
+
+entry: \[
+
+ 'webpack-hot-middleware\/client',
+
+ '.\/src\/index.js'
+
+\],
+
+
+
+
+
+output: {
+
+ path: require\('path'\).resolve\('dist'\),
+
+ filename: 'bundle.js',
+
+ publicPath: '\/'
+
+},
+
+
+
+
+
+plugins: \[
+
+ new webpack.HotModuleReplacementPlugin\(\),
+
+ new webpack.NoErrorsPlugin\(\)
+
+\]
+
+
+
+
+
+remove index.html
+
+add script "dev-server": "node dev-server.js”
+
+
+
+
+
+test it
+
+
+
+
+
+npm run dev-server
+
+
+
+
+
+tag \#dev-server
+
+
+
