@@ -22,7 +22,7 @@ tag \#start
 
 ### **Webpack**
 
-```js
+```
 install webpack —save-dev
 ```
 
