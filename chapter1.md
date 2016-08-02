@@ -22,7 +22,9 @@ tag \#start
 
 ### **Webpack**
 
+```js
 install webpack —save-dev
+```
 
 mkdir src & dist
 
@@ -64,8 +66,6 @@ setup\/babel branch
 npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform-object-rest-spread babel-polyfill babel-preset-es2015 babel-preset-react babel-register babel-runtime babel-loader
 
 add .babelrc
-
-
 
 {
 
