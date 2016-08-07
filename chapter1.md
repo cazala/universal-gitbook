@@ -2,54 +2,83 @@
 
 ### **Init**
 
-master
+Go ahead, create a new directory and jump in
 
-branch setup
+```
+mkdir universal-app && cd universal-app
+```
 
-nvm use 6
+Initialize a git repository
 
+```
 git init
+```
 
-add readme
+Create a new branch `setup`
 
+```
+git checkout -b setup
+```
+
+Set node version to v6
+
+```
+nvm install 6 && nvm use 6
+
+```
+
+Add a README
+
+```
+echo 'Javascript Universal App' > README.md
+```
+
+Initialize npm (go thru the interactive setup)
+
+```
 npm init
+```
 
-ignore node\_modules
+Ignore `node_modules`
+```
+echo node_modules > .gitignore
+```
 
-package.json
+You are all set!
 
-tag \#start
 
 ### **Webpack**
 
+Webpack is a widely used module bundler, and the first thing to setup
+
 ```
-install webpack —save-dev
+install webpack —-save-dev
 ```
 
-mkdir src & dist
+First create a `/src` and `/dist` directories
 
-webpack.config.js
+```
+mkdir src && mkdir dist
+```
 
-ignore dist
+Save the following file as `webpack.config.js`
 
-build & start scripts
 
 ```js
-var webpack = require('webpack') 
-module.exports = { 
-    context: __dirname, 
-    entry: './src/index.js', 
-    output: { 
-        path: 'dist', 
-        filename: 'bundle.js', 
-    }, 
-    plugins: [ new webpack.NoErrorsPlugin() ], 
-    resolve: { 
-        extensions: ['', '.js', '.json'], 
-        modulesDirectories: ['.', 'src', 'node_modules'] 
-    }
-}
+var webpack = require('webpack')var path = require('path')module.exports = {  context: __dirname,  entry: './src/index.js',  output: {    path: path.resolve('dist'),    filename: 'bundle.js',  },  plugins: [ new webpack.NoErrorsPlugin() ],  resolve: {    extensions: ['', '.js', '.json'],    modulesDirectories: ['.', 'src', 'node_modules']  }}
 ```
+
+Add `/dist` to the `.gitignore` file
+
+```
+node_modulesdist
+```
+
+Add `build` and `start` scripts to your `package.json`
+
+```json "build": "webpack --config webpack.config.js", "start": "node dist/bundle.js",
+```
+
 
 **Test It**
 
