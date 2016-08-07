@@ -160,7 +160,6 @@ console.log(spread) // { b:2, c: 3, d: 4 }
 
 Now `npm run build` and `npm run start` and you should see the _rest_ and _spread_ operators working (thus, babel is working)
 
-tag \#babel
 
 ### **PostCSS**
 
@@ -237,11 +236,8 @@ Now run `npm run build` and `open index.html`
 
 ![](/assets/post css.png)
 
-You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`
+You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
 
-open src\/index.html
-
-tag \#postcss
 
 **ESLint**
 
