@@ -252,7 +252,25 @@ npm install --save-dev eslint babel-eslint eslint-config-standard eslint-config-
 add .eslintrc
 
 ```json
-{ "env": { "browser": true, "node": true }, "parser": "babel-eslint", "extends": ["standard", "standard-react"], "rules": { "comma-dangle" : [0, "always-multiline"], "semi": [2, "never"], "no-extra-semi": 2, "jsx-quotes": [2, "prefer-single"], "react/jsx-boolean-value": [0, "always"], "react/jsx-max-props-per-line": [2, {"maximum": 4}], "react/self-closing-comp": 2, "react/jsx-indent-props": [2, 2], "react/sort-comp": 2 }}
+{ 
+  "env": { 
+    "browser": true, 
+    "node": true 
+  }, 
+  "parser": "babel-eslint", 
+  "extends": ["standard", "standard-react"], 
+  "rules": { 
+    "comma-dangle" : [0, "always-multiline"], 
+    "semi": [2, "never"], 
+    "no-extra-semi": 2, 
+    "jsx-quotes": [2, "prefer-single"], 
+    "react/jsx-boolean-value": [0, "always"], 
+    "react/jsx-max-props-per-line": [2, {"maximum": 4}],
+    "react/self-closing-comp": 2, 
+    "react/jsx-indent-props": [2, 2], 
+    "react/sort-comp": 2 
+  }
+}
 ```
 
 test it:
