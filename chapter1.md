@@ -304,9 +304,17 @@ npm install --save-dev webpack-dev-middleware webpack-hot-middleware
 Add the following file as `dev-server.js`:
 
 ```js
-var webpack = require('webpack')var webpackDevMiddleware = require('webpack-dev-middleware')var webpackHotMiddleware = require('webpack-hot-middleware')var config = require('./webpack.config.js')var Express = require('express')
+var webpack = require('webpack')
+var webpackDevMiddleware = require('webpack-dev-middleware')
+var webpackHotMiddleware = require('webpack-hot-middleware')
+var config = require('./webpack.config.js')
+var Express = require('express')
 
-var app = new Express()var port = process.env.PORT || 9999var compiler = webpack(config)var dev = webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath })var hot = webpackHotMiddleware(compiler)
+var app = new Express()
+var port = process.env.PORT || 9999
+var compiler = webpack(config)
+var dev = webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath })
+var hot = webpackHotMiddleware(compiler)
 
 app.use(dev)app.use(hot)
 
