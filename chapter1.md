@@ -178,7 +178,9 @@ This way we will be able to `require(./styles.css)`
 
 `style-loader`: It adds a `<style>` tag to the `<head>` with the loaded style.
 
-`
+`css-loader`: It transform the css file with localized classnames (aka CSS Modules)
+
+`postcss-loader`:
 
 {
 
