@@ -224,7 +224,7 @@ And finally add this `index.html` at the root level (**not** to `/src`)
 
 
 ```js
-
+import styles from './index.css'console.log(styles) // { red: '...' }window.onload = () => document.body.classList.add(styles.red)
 ```
 
 ```html
