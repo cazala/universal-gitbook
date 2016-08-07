@@ -97,7 +97,7 @@ Add `build` and `start` scripts to your `package.json`
 ```
 
 
-**Test It**:
+**Test It Out**:
 
 Create the following `index.js` file inside `/src`: 
 
