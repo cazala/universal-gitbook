@@ -191,7 +191,7 @@ So add the loaders:
 }
 ```
 
-And add the postcss plugins:
+Add the postcss plugins:
 
 ```js
 postcss: [ 
@@ -202,6 +202,11 @@ postcss: [
 ]
 ```
 
+And add the extension to `resolve.extension`
+
+```js
+extensions: ['', '.js', '.json', '.css', 'scss'],
+```
 resolve.extensions ‘css’, ‘scss'
 
 test it:
