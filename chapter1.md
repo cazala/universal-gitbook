@@ -333,7 +333,10 @@ app.get('*', function (req, res) {
   `)
 })
 
-app.listen(port, (error) => { if (error) { console.error(error) return } console.info('Open up http://localhost:%s/ in your browser.', port)})
+app.listen(port, (error) => { 
+  if (error) { console.error(error) return } 
+  console.info('Open up http://localhost:%s/ in your browser.', port)
+})
 ```
 
 change webpack.config.js
