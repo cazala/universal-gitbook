@@ -233,8 +233,11 @@ And finally add this `index.html` at the root level (**not** to `/src`)
 <body>Hello World</body>
 ```
 
-Now run 
-npm run build
+Now run `npm run build` and `open index.html`
+
+![](/assets/post css.png)
+
+
 
 open src\/index.html
 
