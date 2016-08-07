@@ -182,6 +182,8 @@ This way we will be able to `require(./styles.css)`
 
 `postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass/less similar experience.
 
+So add the loaders:
+
 ```js
 { 
   test: /(\.scss|\.css)$/, 
@@ -189,17 +191,11 @@ This way we will be able to `require(./styles.css)`
 }
 ```
 
-postcss: \[
+And add the postcss plugins:
 
-require\('autoprefixer'\),
-
-require\('postcss-import'\),
-
-require\('postcss-nested'\),
-
-require\('postcss-simple-vars'\)
-
-\]
+```js
+postcss: [ require('autoprefixer'), require('postcss-import'), require('postcss-nested'), require('postcss-simple-vars')]
+```
 
 resolve.extensions ‘css’, ‘scss'
 
