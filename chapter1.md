@@ -241,7 +241,7 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 **ESLint**
 
-ESLint is a lint utility that will help us debug at coding time and write consistent code.
+[ESLint](http://eslint.org/) is a lint utility that will help us debug at coding time and write consistent code.
 
 Yet again, another bigass npm install:
 
