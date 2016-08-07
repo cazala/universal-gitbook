@@ -275,7 +275,7 @@ Add a `.eslintrc` file to configure the linter
 
 **Test It Out**:
 
-Now, save the following as 
+Now, save the following as your `src/index.js` 
 
 ```js
 const a = 1
@@ -284,88 +284,36 @@ const c = 3 // unused variable
 console.log(a + b)
 ```
 
-And if you open this with an editor with eslint support (like [Atom](https://atom.io) + [Linter](https://atom.io/packages/linter) + [ESLint Plugin](https://atom.io/packages/linter-eslint)) it should be working
+(also, you can delete the `/index.html` and `/src/index.css` from previous step if you still have them)
+
+
+So now if you open `src/index.js` with an editor with eslint support (like [Atom](https://atom.io) + [Linter](https://atom.io/packages/linter) + [ESLint Plugin](https://atom.io/packages/linter-eslint)) it should be working:
 
 ![](/assets/eslint.png)
 
 
 **DevServer**
 
-setup\/dev-server branch
+Finally, we will create a development server that will watch for changes in our files as we develop and serve them thru a web server, so we can see our work and debug as we code
 
+```
 npm install --save express
+npm install --save-dev webpack-dev-middleware webpack-hot-middleware
+```
 
-npm install --save-dev redbox-react webpack-dev-middleware webpack-hot-middleware
+Add the following file as `dev-server.js`:
 
-add dev-server.js
+```js
+var webpack = require('webpack')var webpackDevMiddleware = require('webpack-dev-middleware')var webpackHotMiddleware = require('webpack-hot-middleware')var config = require('./webpack.config.js')var Express = require('express')
 
-var webpack = require\('webpack'\)
+var app = new Express()var port = process.env.PORT || 9999var compiler = webpack(config)var dev = webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath })var hot = webpackHotMiddleware(compiler)
 
-var webpackDevMiddleware = require\('webpack-dev-middleware'\)
+app.use(dev)app.use(hot)
 
-var webpackHotMiddleware = require\('webpack-hot-middleware'\)
+app.get('*', function (req, res) { res.send(` <html> <head> <style>html { font-size: 62.5%; } </style> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <title>Webpack Development Server</title> </head> <body> <div id="root"> Hello World </div> </body> <script src="/bundle.js" async defer></script> </html> `)})
 
-var config = require\('.\/webpack.config.js'\)
-
-var Express = require\('express'\)
-
-var app = new Express\(\)
-
-var port = process.env.PORT \|\| 9999
-
-var compiler = webpack\(config\)
-
-var dev = webpackDevMiddleware\(compiler, { noInfo: true, publicPath: config.output.publicPath }\)
-
-var hot = webpackHotMiddleware\(compiler\)
-
-app.use\(dev\)
-
-app.use\(hot\)
-
-app.get\('\*', function \(req, res\) {
-
-res.send\(\`
-
-&lt;html&gt;
-
-&lt;head&gt;
-
-&lt;title&gt;Webpack Development Server&lt;\/title&gt;
-
-&lt;\/head&gt;
-
-&lt;body&gt;
-
-&lt;div id="root"&gt;
-
-Hello World
-
-&lt;\/div&gt;
-
-&lt;\/body&gt;
-
-&lt;script src="\/bundle.js" async defer&gt;&lt;\/script&gt;
-
-&lt;\/html&gt;
-
-\`\)
-
-}\)
-
-app.listen\(port, \(error\) =&gt; {
-
-if \(error\) {
-
-console.error\(error\)
-
-return
-
-}
-
-console.info\('Open up http:\/\/localhost:%s\/ in your browser.', port\)
-
-}\)
+app.listen(port, (error) => { if (error) { console.error(error) return } console.info('Open up http://localhost:%s/ in your browser.', port)})
+```
 
 change webpack.config.js
 
