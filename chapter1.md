@@ -323,7 +323,8 @@ app.get('*', function (req, res) {
     <html> 
       <head> 
         <style>html { font-size: 62.5%; } </style>
-        <title>Webpack Development Server</title> </head> <body> <div id="root"> Hello World </div> </body> <script src="/bundle.js" async defer></script> </html> `)})
+        <title>Webpack Development Server</title> 
+      </head> <body> <div id="root"> Hello World </div> </body> <script src="/bundle.js" async defer></script> </html> `)})
 
 app.listen(port, (error) => { if (error) { console.error(error) return } console.info('Open up http://localhost:%s/ in your browser.', port)})
 ```
