@@ -65,13 +65,28 @@ Save the following file as `webpack.config.js`
 
 
 ```js
-var webpack = require('webpack')var path = require('path')module.exports = {  context: __dirname,  entry: './src/index.js',  output: {    path: path.resolve('dist'),    filename: 'bundle.js',  },  plugins: [ new webpack.NoErrorsPlugin() ],  resolve: {    extensions: ['', '.js', '.json'],    modulesDirectories: ['.', 'src', 'node_modules']  }}
+var webpack = require('webpack')
+var path = require('path')
+module.exports = {  
+  context: __dirname,  
+  entry: './src/index.js',  
+  output: {    
+    path: path.resolve('dist'),    
+    filename: 'bundle.js',  },  
+    plugins: [ new webpack.NoErrorsPlugin() ],  
+    resolve: {    
+      extensions: ['', '.js', '.json'],    
+      modulesDirectories: ['.', 'src', 'node_modules']  
+    }
+  }
+}
 ```
 
 Add `/dist` to the `.gitignore` file
 
 ```
-node_modulesdist
+node_modules
+dist
 ```
 
 Add `build` and `start` scripts to your `package.json`
@@ -84,9 +99,15 @@ Add `build` and `start` scripts to your `package.json`
 
 **Test It**
 
-create an `index.js` file and write in it `console.log('hello world’)`
+Create the following `index.js` file inside `/src`: 
 
-now run `npm run build` and then node `./dist/bundle.js`
+```js
+console.log('hello world’)
+```
+
+Now run `npm run build` and then  `npm run start`
+
+
 
 tag \#webpack
 
