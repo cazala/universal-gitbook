@@ -220,6 +220,8 @@ Add the following `index.css` to `/src`
 
 Add the following `index.js` to `/src`
 
+And finally add this `index.html` to the root (**not** to `/src`)
+
 ```html
 <script src='./dist/bundle.js' />
 <body> Hello World</body>
