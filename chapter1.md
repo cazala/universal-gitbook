@@ -288,7 +288,6 @@ And if you open this with an editor with eslint support (like [Atom](https://ato
 
 ![](/assets/eslint.png)
 
-tag \#eslint
 
 **DevServer**
 
