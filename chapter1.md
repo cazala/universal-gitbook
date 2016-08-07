@@ -278,7 +278,10 @@ Add a `.eslintrc` file to configure the linter
 Now, save the following as 
 
 ```js
-const a = 1const b = 2const c = 3 // unused variableconsole.log(a + b)
+const a = 1
+const b = 2
+const c = 3 // unused variable
+console.log(a + b)
 ```
 
 
