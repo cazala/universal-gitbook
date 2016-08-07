@@ -49,7 +49,7 @@ You are all set!
 
 ### **Webpack**
 
-Webpack is a widely used module bundler, and the first thing to setup
+[Webpack](https://webpack.github.io/) is a widely used module bundler, and the first thing to setup
 
 ```
 install webpack —-save-dev
