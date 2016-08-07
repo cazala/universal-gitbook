@@ -284,8 +284,8 @@ const c = 3 // unused variable
 console.log(a + b)
 ```
 
-And if you open this with an editor with eslint support (like [Atom](https://atom.io) + [Linter](
- + ESLint Plugin) it should be working
+And if you open this with an editor with eslint support (like [Atom](https://atom.io) + [Linter](https://atom.io/packages/linter)
+ + [ESLint Plugin](https://atom.io/packages/linter-eslint)) it should be working
 
 ![](/assets/eslint.png)
 
