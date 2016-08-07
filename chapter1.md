@@ -230,7 +230,7 @@ And finally add this `index.html` at the root level (**not** to `/src`)
 
 ```html
 <script src='./dist/bundle.js'></script>
-<body> Hello World</body>
+<body>Hello World</body>
 ```
 
 Now run 
