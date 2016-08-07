@@ -241,7 +241,7 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 **ESLint**
 
-setup\/eslint branch
+ESLint is a 
 
 npm install --save-dev eslint babel-eslint eslint-config-standard eslint-config-standard-react eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-watch
 
