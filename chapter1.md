@@ -322,7 +322,7 @@ app.get('*', function (req, res) {
   res.send(` 
     <html> 
       <head> 
-        <style>html { font-size: 62.5%; }</style>
+        <style>html { font-size: 60%; }</style>
         <title>Webpack Development Server</title> 
       </head> 
       <body> 
