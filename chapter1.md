@@ -158,7 +158,7 @@ console.log(rest) // { b:2, c: 3}
 console.log(spread) // { b:2, c: 3, d: 4 }
 ```
 
-Now `npm run build` and `npm run start` and you should see the `rest` and `spread` operators working (thus, babel is working)
+Now `npm run build` and `npm run start` and you should see the _rest_ and _spread_ operators working (thus, babel is working)
 
 tag \#babel
 
