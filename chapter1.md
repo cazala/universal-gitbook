@@ -112,7 +112,7 @@ You should see a `hello world` in your console, and you will find that you 1 lin
 
 ### **Babel**
 
-Babel is a JavaScript compiler. It extends the language capabilities thru syntax transformers, we will need this in order to use ES2015 and React.
+[Babel](https://babeljs.io/) is a JavaScript compiler. It extends the language capabilities thru syntax transformers, we will need this in order to use ES2015 and React.
 
 Get ready to install a truckload of dependencies
 
