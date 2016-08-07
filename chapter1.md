@@ -146,7 +146,7 @@ module: {
 }
 ```
 
-**Test it**:
+**Test It Out**:
 
 index.js
 
