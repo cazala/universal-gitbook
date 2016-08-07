@@ -321,8 +321,7 @@ app.use(dev)app.use(hot)
 app.get('*', function (req, res) { 
   res.send(` 
     <html> 
-      <head> 
-        <style>html { font-size: 60%; }</style>
+      <head>
         <title>Webpack Development Server</title> 
       </head> 
       <body> 
