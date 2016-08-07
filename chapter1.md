@@ -229,26 +229,10 @@ window.onload = () => document.body.classList.add(styles.red)
 And finally add this `index.html` at the root level (**not** to `/src`)
 
 ```html
-<script src='./dist/bundle.js' />
-<body> Hello World</body>
+<script src='./dist/bundle.js'></script><body> Hello World</body>
 ```
 
-import styles from '.\/index.css'
-
-console.log\(styles\) \/\/ { red: '...' }
-
-window.onload = \(\) =&gt; document.body.classList.add\(styles.red\)
-
-index.html
-
-&lt;script src="..\/dist\/bundle.js"&gt;&lt;\/script&gt;
-
-&lt;body&gt;
-
-Hello World
-
-&lt;\/body&gt;
-
+Now run 
 npm run build
 
 open src\/index.html
