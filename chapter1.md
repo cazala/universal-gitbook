@@ -228,7 +228,6 @@ window.onload = () => document.body.classList.add(styles.red)
 
 And finally add this `index.html` at the root level (**not** to `/src`)
 
-
 ```html
 <script src='./dist/bundle.js' />
 <body> Hello World</body>
