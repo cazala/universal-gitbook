@@ -207,9 +207,8 @@ And add the extension to `resolve.extension`
 ```js
 extensions: ['', '.js', '.json', '.css', 'scss'],
 ```
-resolve.extensions ‘css’, ‘scss'
 
-test it:
+**Test It Out**:
 
 index.css
 
