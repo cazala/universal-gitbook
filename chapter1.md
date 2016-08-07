@@ -218,7 +218,9 @@ Add the following `index.css` to `/src`
 }
 ```
 
-index.js
+Add the following `index.js` to `/src`
+
+
 
 import styles from '.\/index.css'
 
