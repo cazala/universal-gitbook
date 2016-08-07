@@ -76,7 +76,9 @@ node_modulesdist
 
 Add `build` and `start` scripts to your `package.json`
 
-```json "build": "webpack --config webpack.config.js", "start": "node dist/bundle.js",
+```
+json "build": "webpack --config webpack.config.js", 
+"start": "node dist/bundle.js",
 ```
 
 
