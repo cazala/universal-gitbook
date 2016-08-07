@@ -163,7 +163,7 @@ Now `npm run build` and `npm run start` and you should see the _rest_ and _sprea
 
 ### **PostCSS**
 
-PostCSS is a tool for transforming CSS with JavaScript, like a Babel for CSS. We will set it up to let us work with autoprefixer, css modules (localized css classnames), css nesting, css variables and what not.
+[PostCSS](http://postcss.org/) is a tool for transforming CSS with JavaScript, like a Babel for CSS. We will set it up to let us work with autoprefixer, css modules (localized css classnames), css nesting, css variables and what not.
 
 Again, get ready for installing a bunch of deps:
 
