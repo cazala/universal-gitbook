@@ -210,13 +210,13 @@ extensions: ['', '.js', '.json', '.css', 'scss'],
 
 **Test It Out**:
 
-index.css
+Add the following `index.css` to `/src`
 
+```css
 .red {
-
-color: red;
-
+  color: red;
 }
+```
 
 index.js
 
