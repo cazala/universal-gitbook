@@ -172,9 +172,11 @@ Again, get ready for installing a bunch of deps:
 npm install --save-dev autoprefixer css-loader style-loader url-loader postcss-import postcss-loader postcss-mixins postcss-nested postcss-simple-vars
 ```
 
-Add loader to `webpack.config.js` so wepack loads all the .css and .scss files with `style`, `css` and `postcss` loaders.
+Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` files with `style`, `css` and `postcss` loaders.
 
 
+
+`style-loader`: It adds a `<style>` tag to the
 
 {
 
