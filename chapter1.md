@@ -237,7 +237,7 @@ Now run `npm run build` and `open index.html`
 
 ![](/assets/post css.png)
 
-
+You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`
 
 open src\/index.html
 
