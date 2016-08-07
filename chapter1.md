@@ -273,15 +273,16 @@ Add a `.eslintrc` file to configure the linter
 }
 ```
 
-test it:
+**Test It Out**:
 
-const a = 1
+Now, save the following as 
 
-const b = 2
+```js
+const a = 1const b = 2const c = 3 // unused variableconsole.log(a + b)
+```
 
-const c = 3 \/\/ ‘c’ is defined but never used
 
-console.log\(a + b\)
+![](/assets/eslint.png)
 
 tag \#eslint
 
