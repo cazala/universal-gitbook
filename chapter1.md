@@ -220,12 +220,14 @@ Add the following `index.css` to `/src`
 
 Add the following `index.js` to `/src`
 
-
 ```js
 import styles from './index.css'
 console.log(styles) // { red: '...' }
 window.onload = () => document.body.classList.add(styles.red)
 ```
+
+And finally add this `index.html` at the root level (**not** to `/src`)
+
 
 ```html
 <script src='./dist/bundle.js' />
