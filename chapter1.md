@@ -174,8 +174,6 @@ npm install --save-dev autoprefixer css-loader style-loader url-loader postcss-i
 
 Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` files with `style`, `css` and `postcss` loaders.
 
-
-
 `style-loader`: It adds a `<style>` tag to the
 
 {
