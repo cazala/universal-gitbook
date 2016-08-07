@@ -325,7 +325,7 @@ app.get('*', function (req, res) {
         <title>Webpack Development Server</title> 
       </head> 
       <body> 
-        <div id="root"></div> 
+        <div id="root">Hello World</div> 
       </body>
       <script src="/bundle.js" async defer></script> 
     </html>
