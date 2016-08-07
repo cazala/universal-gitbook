@@ -122,7 +122,7 @@ npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform
 
 Add `.babelrc` to configure babel
 
-```js
+```json
 { 
   "presets": ["es2015", "react"], 
   "plugins": [ 
@@ -241,49 +241,19 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 **ESLint**
 
-ESLint is a 
+ESLint is a lint utility that will help us debug at coding time and write consistent code.
 
+Yet again, another bigass npm install:
+
+```
 npm install --save-dev eslint babel-eslint eslint-config-standard eslint-config-standard-react eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-watch
+```
 
 add .eslintrc
 
-{
-
-"env": {
-
-"browser": true,
-
-"node": true
-
-},
-
-"parser": "babel-eslint",
-
-"extends": \["standard", "standard-react"\],
-
-"rules": {
-
-"comma-dangle" : \[0, "always-multiline"\],
-
-"semi": \[2, "never"\],
-
-"no-extra-semi": 2,
-
-"jsx-quotes": \[2, "prefer-single"\],
-
-"react\/jsx-boolean-value": \[0, "always"\],
-
-"react\/jsx-max-props-per-line": \[2, {"maximum": 4}\],
-
-"react\/self-closing-comp": 2,
-
-"react\/jsx-indent-props": \[2, 2\],
-
-"react\/sort-comp": 2
-
-}
-
-}
+```json
+{ "env": { "browser": true, "node": true }, "parser": "babel-eslint", "extends": ["standard", "standard-react"], "rules": { "comma-dangle" : [0, "always-multiline"], "semi": [2, "never"], "no-extra-semi": 2, "jsx-quotes": [2, "prefer-single"], "react/jsx-boolean-value": [0, "always"], "react/jsx-max-props-per-line": [2, {"maximum": 4}], "react/self-closing-comp": 2, "react/jsx-indent-props": [2, 2], "react/sort-comp": 2 }}
+```
 
 test it:
 
