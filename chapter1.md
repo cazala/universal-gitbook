@@ -194,7 +194,12 @@ So add the loaders:
 And add the postcss plugins:
 
 ```js
-postcss: [ require('autoprefixer'), require('postcss-import'), require('postcss-nested'), require('postcss-simple-vars')]
+postcss: [ 
+  require('autoprefixer'), 
+  require('postcss-import'), 
+  require('postcss-nested'),
+  require('postcss-simple-vars')
+]
 ```
 
 resolve.extensions ‘css’, ‘scss'
