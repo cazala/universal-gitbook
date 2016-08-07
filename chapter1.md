@@ -180,15 +180,12 @@ This way we will be able to `require(./styles.css)`
 
 `css-loader`: It transform the css file with localized classnames (aka CSS Modules)
 
-`postcss-loader`:
+`postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass/less similar experience.
 
-{
+```js
+{ test: /(\.scss|\.css)$/, loaders: ['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss'] }
 
-test: \/\(.scss\|.css\)$\/,
-
-loaders: \['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=\[name\]\_\_\[local\]\_\_\_\[hash:base64:5\]', 'postcss'\]
-
-},
+```
 
 postcss: \[
 
