@@ -169,7 +169,7 @@ PostCSS is a tool for transforming CSS with JavaScript, like a Babel for CSS. We
 Again, get ready for installing a bunch of deps:
 
 ```
-npm install --save-dev autoprefixer css-loader style-loader url-loader postcss-import postcss-loader postcss-mixins postcss-nested postcss-simple-vars
+npm install --save-dev autoprefixer css-loader style-loader postcss-import postcss-loader postcss-mixins postcss-nested postcss-simple-vars
 ```
 
 Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` files with `style`, `css` and `postcss` loaders. 
