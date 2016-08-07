@@ -220,8 +220,6 @@ Add the following `index.css` to `/src`
 
 Add the following `index.js` to `/src`
 
-And finally add this `index.html` at the root level (**not** to `/src`)
-
 
 ```js
 import styles from './index.css'
