@@ -319,7 +319,8 @@ var hot = webpackHotMiddleware(compiler)
 app.use(dev)app.use(hot)
 
 app.get('*', function (req, res) { 
-  res.send(` <html> <head> <style>html { font-size: 62.5%; } </style> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <title>Webpack Development Server</title> </head> <body> <div id="root"> Hello World </div> </body> <script src="/bundle.js" async defer></script> </html> `)})
+  res.send(` 
+    <html> <head> <style>html { font-size: 62.5%; } </style> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <title>Webpack Development Server</title> </head> <body> <div id="root"> Hello World </div> </body> <script src="/bundle.js" async defer></script> </html> `)})
 
 app.listen(port, (error) => { if (error) { console.error(error) return } console.info('Open up http://localhost:%s/ in your browser.', port)})
 ```
