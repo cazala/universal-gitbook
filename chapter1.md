@@ -162,7 +162,7 @@ Now `npm run build` and `npm run start` and you should see the _rest_ and _sprea
 
 tag \#babel
 
-**PostCSS**
+### **PostCSS**
 
 setup\/postcss branch
 
