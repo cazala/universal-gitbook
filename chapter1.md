@@ -114,12 +114,13 @@ You should see a `hello world` in your console, and you will find that you 1 lin
 
 Babel is a JavaScript compiler. It extends the language capabilities thru syntax transformers, we will need this in order to use ES2015 and React.
 
+Get ready to install a truckload of dependencies
 
 ```
 npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform-object-rest-spread babel-polyfill babel-preset-es2015 babel-preset-react babel-register babel-runtime babel-loader
 ```
 
-Add .babelrc
+Add `.babelrc` to configure babel
 
 ```js
 { 
@@ -131,25 +132,11 @@ Add .babelrc
 }
 ```
 
-add loader to webpack.config.js
+And finally add loader to `webpack.config.js` to webpack transpiles the `.js` files using babel
 
-module: {
+```js
+module: {  loaders: [    {      test: /\.js$/,      loaders: ['babel'],      exclude: /node_modules/    }  ]}
 
-loaders: \[
-
-{
-
-test: \/.js\/,
-
-loaders: \['babel’\],
-
-exclude: \/node\_modules\/
-
-}
-
-\]
-
-}
 
 test it:
 
