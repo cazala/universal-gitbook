@@ -132,7 +132,7 @@ Add `.babelrc` to configure babel
 }
 ```
 
-And finally add loader to `webpack.config.js` so webpack transpiles all the `.js` files using babel
+And finally add loader to `webpack.config.js` so webpack transpiles all the `.js` files using babel (except the ones in `node_modules`)
 
 ```js
 module: {  
