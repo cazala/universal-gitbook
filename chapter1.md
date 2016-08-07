@@ -183,8 +183,10 @@ This way we will be able to `require(./styles.css)`
 `postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass/less similar experience.
 
 ```js
-{ test: /(\.scss|\.css)$/, loaders: ['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss'] }
-
+{ 
+  test: /(\.scss|\.css)$/, 
+  loaders: ['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss'] 
+}
 ```
 
 postcss: \[
