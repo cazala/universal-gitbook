@@ -222,6 +222,11 @@ Add the following `index.js` to `/src`
 
 And finally add this `index.html` at the root level (**not** to `/src`)
 
+
+```js
+
+```
+
 ```html
 <script src='./dist/bundle.js' />
 <body> Hello World</body>
