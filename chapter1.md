@@ -220,7 +220,9 @@ Add the following `index.css` to `/src`
 
 Add the following `index.js` to `/src`
 
-
+```html
+<script src='./dist/bundle.js' /><body> Hello World</body>
+```
 
 import styles from '.\/index.css'
 
