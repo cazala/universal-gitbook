@@ -111,6 +111,8 @@ Now just `npm run build` and then  `npm run start`
 
 You should see a `hello world` in your console, and you will find that you 1 line `src/index.js` has become a 51 lines `dist/bundle.js`. Yay... right? This will pay off in the future tho, as we start plugging stuff into webpack.
 
+---
+
 ### **Babel**
 
 [Babel](https://babeljs.io/) is a JavaScript compiler. It extends the language capabilities thru syntax transformers, we will need this in order to use ES2015 and React.
@@ -160,6 +162,8 @@ console.log(spread) // { b:2, c: 3, d: 4 }
 ```
 
 Now `npm run build` and `npm run start` and you should see the _rest_ and _spread_ operators working \(thus, babel is working\)
+
+---
 
 ### **PostCSS**
 
@@ -238,6 +242,8 @@ Now run `npm run build` and `open index.html`
 
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
 
+---
+
 ### **ESLint**
 
 [ESLint](http://eslint.org/) is a lint utility that will help us debug at coding time and write consistent code.
@@ -288,6 +294,8 @@ console.log(a + b)
 So now if you open `src/index.js` with an editor with eslint support \(like [Atom](https://atom.io) + [Linter](https://atom.io/packages/linter) + [ESLint Plugin](https://atom.io/packages/linter-eslint)\) it should be working:
 
 ![](/assets/eslint.png)
+
+---
 
 ### **DevServer**
 
