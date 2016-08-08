@@ -233,7 +233,7 @@ postcss: [
 ]
 ```
 
-And add the extension to `resolve.extension`
+And add the extensions to `resolve.extension`
 
 ```js
 extensions: ['', '.js', '.json', '.css', 'scss'],
