@@ -270,9 +270,10 @@ And finally add this `index.html` at the root level \(**not** to `/src`\)
 
 Now run `npm run build` and `open index.html`
 
-![](/assets/postcss.png)
-
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
+
+
+![](/assets/postcss.png)
 
 ---
 
