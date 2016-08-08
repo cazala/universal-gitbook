@@ -49,7 +49,7 @@ echo node_modules > .gitignore
 
 You are all set!
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/5e95fdf8103e5a75d129ef7ce3183273bac86483)
+**Diff**: to see the diff for this step [click here]()
 
 **Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Init)
 
