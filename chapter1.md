@@ -105,6 +105,8 @@ Add `build` and `start` scripts to your `package.json`
 "start": "node dist/bundle.js",
 ```
 
+---
+
 **Test It Out**:
 
 Create the following `index.js` file inside `/src`:
