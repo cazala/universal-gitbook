@@ -437,8 +437,6 @@ Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello W
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f)
 
-
-
 **Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS)
 
 ---
