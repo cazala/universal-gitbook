@@ -441,7 +441,7 @@ Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello W
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/b35ee38c160f72f3598832400f77d918ce09a40b).
 
-**Fast-forward**: ``
+**Fast-forward**: `git clone --branch webpack https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
