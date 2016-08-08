@@ -338,17 +338,20 @@ app.listen(port, (error) => {
 })
 ```
 
-change webpack.config.js
+Add a `devtool` property to `webpack.config.js`
 
+```
 devtool: 'cheap-module-eval-source-map',
+```
 
-entry: \[
+Add `webpack-hot-middleware`'s client to your `webpack.entry` list
 
-'webpack-hot-middleware\/client',
-
-'.\/src\/index.js'
-
-\],
+```
+entry: [
+  'webpack-hot-middleware/client',
+  './src/index.js'
+]
+```
 
 output: {
 
