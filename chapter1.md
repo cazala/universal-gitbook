@@ -350,7 +350,7 @@ Add `webpack-hot-middleware`'s client to your `webpack.entry` list
 entry: [
   'webpack-hot-middleware/client',
   './src/index.js'
-]
+],
 ```
 
 Add a public path to your `webpack.output`
