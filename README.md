@@ -4,7 +4,7 @@ The motivation to write this workshop came from the frustration that I found whe
 
 I hope if there's someone else going thru the same pain of learning these tecnologies, will finds this useful.
 
-### Prereqs
+**Prerequisites**
 
 You will need to be on a unix machine with `git` and `nvm` installed to be able to do this tutorial.
 
