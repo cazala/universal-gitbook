@@ -209,7 +209,7 @@ This way we will be able to `require(./styles.css)`
 
 `style-loader`: It adds a `<style>` tag to the `<head>` with the loaded style.
 
-`css-loader`: It transform the css file with localized classnames \(aka CSS Modules\)
+`css-loader`: It transform the css file with localized classnames \(aka CSS Modules\) and applies minification.
 
 `postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass\/less similar experience.
 
