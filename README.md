@@ -19,4 +19,4 @@ Each chapter of this gitbook has its own **branch** and a **release**, and each 
 
 # Table Of Contents
 
-+ **Chapter 0: [Setup](https://github.com/cazala/universal-gitbook/blob/master/chapter1.md)**
++ **Chapter 0: [Setup](https://cazala.gitbooks.io/universal-javascript/content/chapter1.html)**
