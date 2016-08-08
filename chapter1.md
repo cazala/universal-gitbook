@@ -117,10 +117,11 @@ Now just `npm run build` and then  `npm run start`
 
 You should see a `hello world` in your console, and you will find that you 1 line `src/index.js` has become a 51 lines `dist/bundle.js`. Yay... right? This will pay off in the future tho, as we start plugging stuff into webpack.
 
+---
+
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/5e95fdf8103e5a75d129ef7ce3183273bac86483)
 
 **Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Webpack)
-
 
 ---
 
