@@ -49,6 +49,7 @@ echo node_modules > .gitignore
 
 You are all set!
 
+---------------------
 
 ### **Webpack**
 
