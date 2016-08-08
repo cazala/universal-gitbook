@@ -207,13 +207,13 @@ Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` f
 
 This way we will be able to `require(./styles.css)`
 
-`style-loader`: It adds a `<style>` tag to the `<head>` with the loaded style.
++ **style-loader**: It adds a `<style>` tag to the `<head>` with the loaded style.
 
-`css-loader`: It transform the css file with localized classnames \(aka CSS Modules\) and applies minification.
++ **css-loader**: It transform the css file with localized classnames \(aka CSS Modules\), applies minification and source-maps.
 
-`postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass\/less similar experience.
++ **postcss-loader**: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass\/less similar experience.
 
-So add the loaders:
+So lets add the loaders:
 
 ```js
 { 
@@ -269,7 +269,6 @@ And finally add this `index.html` at the root level \(**not** to `/src`\)
 Now run `npm run build` and `open index.html`
 
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
-
 
 ![](/assets/postcss.png)
 
