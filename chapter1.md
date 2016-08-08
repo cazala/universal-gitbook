@@ -262,7 +262,6 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 **Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel)
 
-
 ---
 
 ### **ESLint**
