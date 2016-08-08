@@ -6,8 +6,12 @@ I hope if there's someone else going thru the same pain of learning these tecnol
 
 **Prerequisites**
 
-This tutorial assumes you are on a unix machine, with `git` and `nvm` installed. You don't really need them, but they will make your life easier:
+This tutorial assumes you are on a unix machine, with `git` and `nvm` installed. You don't _really_ need them, but they will make your life easier:
 
 - Install [git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git)
 
 - Install [nvm](http://nvm.sh)
+
+**Fast-forward**
+
+Each chapter of this gitbook has its own **branch** and a **release**, and each section has a **tag** and a **diff**, so you can jump to any part of the tutorial using `git clone` or see the differences between each sections using the diffview on github (links are provided at the begining of each chapter, and at the end of each section).

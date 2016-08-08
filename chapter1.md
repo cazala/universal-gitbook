@@ -4,9 +4,9 @@
 
 The purpose of this chapter is to setup a development environment to start working on our universal app. We will cover Webpack, Babel, PostCSS, ESLint and we will create a DevServer.
 
-**Commits**: To see the commits of this chapter checkout [this branch](https://github.com/cazala/universal-app/commits/setup)
+**Branch**: To see the commits of this chapter checkout [this branch](https://github.com/cazala/universal-app/commits/setup).
 
-**Release**: To fast-forward this chapter just clone [this release](https://github.com/cazala/universal-app/releases/tag/Setup)
+**Release**: To skip this chapter just clone [this release](https://github.com/cazala/universal-app/releases/tag/Setup).
 
 ---
 
@@ -59,9 +59,9 @@ You are all set!
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/8eac4b551efca5ab61c3171ec0f68eb38475f724)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/8eac4b551efca5ab61c3171ec0f68eb38475f724).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Init)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Init).
 
 ---
 
@@ -129,9 +129,9 @@ You should see a `hello world` in your console, and you will find that you 1 lin
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/5e95fdf8103e5a75d129ef7ce3183273bac86483)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/5e95fdf8103e5a75d129ef7ce3183273bac86483).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Webpack)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Webpack).
 
 ---
 
@@ -189,9 +189,9 @@ Now `npm run build` and `npm run start` and you should see the _rest_ and _sprea
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/faf27892fb149f66a9dedac8cb9f425ebd689e28)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/faf27892fb149f66a9dedac8cb9f425ebd689e28).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel).
 
 ---
 
@@ -276,9 +276,9 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS).
 
 ---
 
@@ -337,9 +337,9 @@ So now if you open `src/index.js` with an editor with eslint support \(like [Ato
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/fe166a55dd76b1b70310587c6ca7f26deaf5e2da)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/fe166a55dd76b1b70310587c6ca7f26deaf5e2da).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/ESLint)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/ESLint).
 
 ---
 
@@ -425,15 +425,10 @@ plugins: [
 
 You can also remove `src/index.js` if you still have it from previous step
 
-Finally, add a script to your `package.json` to start the dev-server
+Finally, add a script to your `package.json`'s scripts to start the dev-server
 
 ```
-"scripts": { 
   "dev-server": "node dev-server.js", 
-  "build": "webpack --config webpack.config.js", 
-  "start": "node dist/bundle.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
 ```
 
 ---
@@ -444,9 +439,9 @@ Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello W
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/b35ee38c160f72f3598832400f77d918ce09a40b)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/b35ee38c160f72f3598832400f77d918ce09a40b).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/DevServer)
+**Fast-forward**: ``
 
 ---
 
