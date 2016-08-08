@@ -363,14 +363,12 @@ output: {
 }
 ```
 
-plugins: \[
+Add 
 
-new webpack.HotModuleReplacementPlugin\(\),
+```js
+plugins: [ new webpack.HotModuleReplacementPlugin(), new webpack.NoErrorsPlugin()],
 
-new webpack.NoErrorsPlugin\(\)
-
-\]
-
+```
 remove index.html
 
 add script "dev-server": "node dev-server.js”
