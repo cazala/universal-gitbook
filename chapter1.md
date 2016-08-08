@@ -363,7 +363,7 @@ output: {
 }
 ```
 
-Add 
+Add webpack's `HotModuleReplacementPlugin` to your `webpack.plugins`
 
 ```js
 plugins: [ 
