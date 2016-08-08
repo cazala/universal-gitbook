@@ -49,6 +49,9 @@ echo node_modules > .gitignore
 
 You are all set!
 
+---------------------
+
+
 ### **Webpack**
 
 [Webpack](https://webpack.github.io/) is a widely used module bundler, and the first thing to setup
