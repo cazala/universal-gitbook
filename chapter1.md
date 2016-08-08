@@ -1,6 +1,6 @@
 # Chapter 0 - Setup
 
-### **Init**
+## **Init**
 
 Go ahead, create a new directory and jump in
 
@@ -33,19 +33,19 @@ Add a README
 echo 'Javascript Universal App' > README.md
 ```
 
-Initialize npm (go thru the interactive setup)
+Initialize npm \(go thru the interactive setup\)
 
 ```
 npm init
 ```
 
 Ignore `node_modules`
+
 ```
 echo node_modules > .gitignore
 ```
 
 You are all set!
-
 
 ### **Webpack**
 
@@ -62,7 +62,6 @@ mkdir src && mkdir dist
 ```
 
 Save the following file as `webpack.config.js`
-
 
 ```js
 var webpack = require('webpack')
@@ -96,10 +95,9 @@ Add `build` and `start` scripts to your `package.json`
 "start": "node dist/bundle.js",
 ```
 
-
 **Test It Out**:
 
-Create the following `index.js` file inside `/src`: 
+Create the following `index.js` file inside `/src`:
 
 ```js
 console.log('hello world’)
@@ -108,7 +106,6 @@ console.log('hello world’)
 Now just `npm run build` and then  `npm run start`
 
 You should see a `hello world` in your console, and you will find that you 1 line `src/index.js` has become a 51 lines `dist/bundle.js`. Yay... right? This will pay off in the future tho, as we start plugging stuff into webpack.
-
 
 ### **Babel**
 
@@ -132,7 +129,7 @@ Add `.babelrc` to configure babel
 }
 ```
 
-And finally add loader to `webpack.config.js` so webpack transpiles all the `.js` files using babel (except the ones in `node_modules`)
+And finally add loader to `webpack.config.js` so webpack transpiles all the `.js` files using babel \(except the ones in `node_modules`\)
 
 ```js
 module: {  
@@ -158,12 +155,11 @@ console.log(rest) // { b:2, c: 3}
 console.log(spread) // { b:2, c: 3, d: 4 }
 ```
 
-Now `npm run build` and `npm run start` and you should see the _rest_ and _spread_ operators working (thus, babel is working)
-
+Now `npm run build` and `npm run start` and you should see the _rest_ and _spread_ operators working \(thus, babel is working\)
 
 ### **PostCSS**
 
-[PostCSS](http://postcss.org/) is a tool for transforming CSS with JavaScript, like a Babel for CSS. We will set it up to let us work with autoprefixer, css modules (localized css classnames), css nesting, css variables and what not.
+[PostCSS](http://postcss.org/) is a tool for transforming CSS with JavaScript, like a Babel for CSS. We will set it up to let us work with autoprefixer, css modules \(localized css classnames\), css nesting, css variables and what not.
 
 Again, get ready for installing a bunch of deps:
 
@@ -171,15 +167,15 @@ Again, get ready for installing a bunch of deps:
 npm install --save-dev autoprefixer css-loader style-loader postcss-import postcss-loader postcss-mixins postcss-nested postcss-simple-vars
 ```
 
-Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` files with `style`, `css` and `postcss` loaders. 
+Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` files with `style`, `css` and `postcss` loaders.
 
 This way we will be able to `require(./styles.css)`
 
 `style-loader`: It adds a `<style>` tag to the `<head>` with the loaded style.
 
-`css-loader`: It transform the css file with localized classnames (aka CSS Modules)
+`css-loader`: It transform the css file with localized classnames \(aka CSS Modules\)
 
-`postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass/less similar experience.
+`postcss-loader`: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass\/less similar experience.
 
 So add the loaders:
 
@@ -225,7 +221,7 @@ console.log(styles) // { red: '...' }
 window.onload = () => document.body.classList.add(styles.red)
 ```
 
-And finally add this `index.html` at the root level (**not** to `/src`)
+And finally add this `index.html` at the root level \(**not** to `/src`\)
 
 ```html
 <script src='./dist/bundle.js'></script>
@@ -237,7 +233,6 @@ Now run `npm run build` and `open index.html`
 ![](/assets/post css.png)
 
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
-
 
 **ESLint**
 
@@ -275,7 +270,7 @@ Add a `.eslintrc` file to configure the linter
 
 **Test It Out**:
 
-Now, save the following as your `src/index.js` 
+Now, save the following as your `src/index.js`
 
 ```js
 const a = 1
@@ -284,13 +279,11 @@ const c = 3 // unused variable
 console.log(a + b)
 ```
 
-(also, you can delete the `/index.html` and `/src/index.css` from previous step if you still have them)
+\(also, you can delete the `/index.html` and `/src/index.css` from previous step if you still have them\)
 
-
-So now if you open `src/index.js` with an editor with eslint support (like [Atom](https://atom.io) + [Linter](https://atom.io/packages/linter) + [ESLint Plugin](https://atom.io/packages/linter-eslint)) it should be working:
+So now if you open `src/index.js` with an editor with eslint support \(like [Atom](https://atom.io) + [Linter](https://atom.io/packages/linter) + [ESLint Plugin](https://atom.io/packages/linter-eslint)\) it should be working:
 
 ![](/assets/eslint.png)
-
 
 **DevServer**
 
@@ -374,8 +367,7 @@ plugins: [
 
 You can also remove `src/index.js` if you still have it from previous step
 
-
-Finally, add a script to your `package.json` to start the dev-server 
+Finally, add a script to your `package.json` to start the dev-server
 
 ```
 "scripts": { 
@@ -389,5 +381,4 @@ Finally, add a script to your `package.json` to start the dev-server
 **Test It Out**:
 
 Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello World
-
 
