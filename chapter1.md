@@ -227,6 +227,8 @@ And add the extension to `resolve.extension`
 extensions: ['', '.js', '.json', '.css', 'scss'],
 ```
 
+---
+
 **Test It Out**:
 
 Add the following `index.css` to `/src`
