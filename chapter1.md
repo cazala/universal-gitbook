@@ -356,7 +356,11 @@ entry: [
 Add a public path to your `webpack.output`
 
 ```
-output: { path: path.resolve('dist'), filename: 'bundle.js', publicPath: '/'}
+output: { 
+  path: path.resolve('dist'), 
+  filename: 'bundle.js', 
+  publicPath: '/'
+}
 ```
 
 plugins: \[
