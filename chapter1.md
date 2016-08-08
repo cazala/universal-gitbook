@@ -8,7 +8,7 @@ The purpose of this chapter is to setup a development environment to start worki
 
 ---
 
-### **Init**
+## Init
 
 Go ahead, create a new directory and jump in
 
@@ -63,7 +63,7 @@ You are all set!
 
 ---
 
-### **Webpack**
+## Webpack
 
 [Webpack](https://webpack.github.io/) is a widely used module bundler, and the first thing to setup
 
@@ -133,7 +133,7 @@ You should see a `hello world` in your console, and you will find that you 1 lin
 
 ---
 
-### **Babel**
+## Babel
 
 [Babel](https://babeljs.io/) is a JavaScript compiler. It extends the language capabilities thru syntax transformers, we will need this in order to use ES2015 and React.
 
@@ -193,7 +193,7 @@ Now `npm run build` and `npm run start` and you should see the _rest_ and _sprea
 
 ---
 
-### **PostCSS**
+## PostCSS
 
 [PostCSS](http://postcss.org/) is a tool for transforming CSS with JavaScript, like a Babel for CSS. We will set it up to let us work with autoprefixer, css modules \(localized css classnames\), css nesting, css variables and what not.
 
@@ -281,7 +281,7 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 ---
 
-### **ESLint**
+## ESLint
 
 [ESLint](http://eslint.org/) is a lint utility that will help us debug at coding time and write consistent code.
 
@@ -342,7 +342,7 @@ So now if you open `src/index.js` with an editor with eslint support \(like [Ato
 
 ---
 
-### **DevServer**
+## DevServer
 
 Finally, we will create a development server that will watch for changes in our files as we develop and serve them thru a web server, so we can see our work and debug as we code
 
