@@ -17,6 +17,6 @@ This tutorial assumes you are on a unix machine, with `git` and `nvm` installed.
 
 Each chapter of this gitbook has its own **branch** and a **release**, and each section has a **tag** and a **diff**, so you can jump to any part of the tutorial using `git clone` or see the differences between each sections using the diffview on github \(links are provided at the begining of each chapter, and at the end of each section\).
 
-**Table Of Contents**
+# Table Of Contents
 
-+ [Chapter 0: Setup](https://github.com/cazala/universal-gitbook/blob/master/chapter1.md)
++ ####Chapter 0: [Setup](https://github.com/cazala/universal-gitbook/blob/master/chapter1.md)
