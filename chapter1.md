@@ -375,7 +375,7 @@ plugins: [
 You can also remove `src/index.js` if you still have it from previous step
 
 
-Finally, add a script to your package.json to start the dev-server 
+Finally, add a script to your `package.json` to start the dev-server 
 
 ```
 "scripts": { 
@@ -386,9 +386,9 @@ Finally, add a script to your package.json to start the dev-server
 },
 ```
 
-test it
+**Test It Out**:
 
-npm run dev-server
+Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello World
 
 tag \#dev-server
 
