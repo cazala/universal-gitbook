@@ -315,7 +315,6 @@ So now if you open `src/index.js` with an editor with eslint support \(like [Ato
 
 ![](/assets/eslint.png)
 
-
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f)
 
 **Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS)
