@@ -120,7 +120,7 @@ Add `build` and `start` scripts to your `package.json`
 Create the following `index.js` file inside `/src`:
 
 ```js
-console.log('hello world’)
+console.log('hello world')
 ```
 
 Now just `npm run build` and then  `npm run start`
