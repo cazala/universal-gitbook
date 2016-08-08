@@ -125,7 +125,7 @@ npm install --save babel-core babel-plugin-jsx-display-if babel-plugin-transform
 
 Add `.babelrc` to configure babel
 
-```json
+```js
 { 
   "presets": ["es2015", "react"], 
   "plugins": [ 
