@@ -428,6 +428,8 @@ Finally, add a script to your `package.json` to start the dev-server
 },
 ```
 
+---
+
 **Test It Out**:
 
 Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello World
