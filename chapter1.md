@@ -174,9 +174,9 @@ console.log(spread) // { b:2, c: 3, d: 4 }
 
 Now `npm run build` and `npm run start` and you should see the _rest_ and _spread_ operators working \(thus, babel is working\)
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/5e95fdf8103e5a75d129ef7ce3183273bac86483)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/faf27892fb149f66a9dedac8cb9f425ebd689e28)
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Webpack)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel)
 
 
 ---
@@ -257,6 +257,11 @@ Now run `npm run build` and `open index.html`
 ![](/assets/post css.png)
 
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
+
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/faf27892fb149f66a9dedac8cb9f425ebd689e28)
+
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel)
+
 
 ---
 
