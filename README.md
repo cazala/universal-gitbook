@@ -6,8 +6,8 @@ I hope if there's someone else going thru the same pain of learning these tecnol
 
 **Prerequisites**
 
-You will need to be on a unix machine with `git` and `nvm` installed to be able to do this tutorial.
+This tutorial assumes you are on a unix machine, with `git` and `nvm` installed. You don't really need them, but they will make your life easier:
 
-Install [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git)
+- Install [git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git)
 
-Install [nvm](http://nvm.sh)
+- Install [nvm](http://nvm.sh)
