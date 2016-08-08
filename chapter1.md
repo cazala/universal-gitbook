@@ -1,6 +1,8 @@
 # Chapter 0 - Setup
+------------------
 
 ### **Init**
+------------
 
 Go ahead, create a new directory and jump in
 
