@@ -258,9 +258,9 @@ Now run `npm run build` and `open index.html`
 
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/faf27892fb149f66a9dedac8cb9f425ebd689e28)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f)
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS)
 
 ---
 
