@@ -2,6 +2,14 @@
 
 ---
 
+The purpose of this chapter is to setup a development environment to start working on our universal app. We will cover Webpack, Babel, PostCSS, ESLint and we will create a DevServer.
+
+**Commits**: To see the commits of this chapter checkout [this branch]()
+
+**Tag**: To fast-forward this chapter just clone [this tag]()
+
+---
+
 ### **Init**
 
 Go ahead, create a new directory and jump in
