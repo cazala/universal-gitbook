@@ -160,6 +160,8 @@ module: {
 }
 ```
 
+---
+
 **Test It Out**:
 
 Save the following as your `src/index.js`
