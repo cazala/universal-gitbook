@@ -278,7 +278,7 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f).
 
-**Fast-forward**: `git clone --branch dev-server https://github.com/cazala/universal-app.git --depth=1`
+**Fast-forward**: `git clone --branch postcss https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
