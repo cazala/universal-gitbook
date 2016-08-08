@@ -330,9 +330,9 @@ So now if you open `src/index.js` with an editor with eslint support \(like [Ato
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/fe166a55dd76b1b70310587c6ca7f26deaf5e2da)
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/ESLint)
 
 ---
 
@@ -435,9 +435,9 @@ Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello W
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f)
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/b35ee38c160f72f3598832400f77d918ce09a40b)
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS)
+**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/DevServer)
 
 ---
 
