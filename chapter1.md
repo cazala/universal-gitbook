@@ -298,6 +298,8 @@ Add a `.eslintrc` file to configure the linter
 }
 ```
 
+---
+
 **Test It Out**:
 
 Now, save the following as your `src/index.js`
