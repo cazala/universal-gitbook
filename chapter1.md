@@ -278,7 +278,7 @@ You should see that a `<style>` tag was added to the `<head>` with our css file,
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3891271b84fc3814ef02f19f1a76e765b326526f).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/PostCSS).
+**Fast-forward**: `git clone --branch dev-server https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
@@ -339,7 +339,7 @@ So now if you open `src/index.js` with an editor with eslint support \(like [Ato
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/fe166a55dd76b1b70310587c6ca7f26deaf5e2da).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/ESLint).
+**Fast-forward**: `git clone --branch eslint https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
@@ -441,7 +441,7 @@ Just `npm run dev-server` and open up `localhost:9999`, you should see a Hello W
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/b35ee38c160f72f3598832400f77d918ce09a40b).
 
-**Fast-forward**: `git clone --branch webpack https://github.com/cazala/universal-app.git --depth=1`
+**Fast-forward**: `git clone --branch dev-server https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
