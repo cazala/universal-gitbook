@@ -131,7 +131,7 @@ You should see a `hello world` in your console, and you will find that you 1 lin
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/5e95fdf8103e5a75d129ef7ce3183273bac86483).
 
-**Fast-forward**: `git clone --branch dev-server https://github.com/cazala/universal-app.git --depth=1`
+**Fast-forward**: `git clone --branch webpack https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
