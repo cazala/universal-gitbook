@@ -1,6 +1,6 @@
 # Chapter 0 - Setup
 
-## **Init**
+### **Init**
 
 Go ahead, create a new directory and jump in
 
@@ -234,7 +234,7 @@ Now run `npm run build` and `open index.html`
 
 You should see that a `<style>` tag was added to the `<head>` with our css file, and the localized css classname `index__red___3fvh6` was applied to the `<body>`, making the Hello World be red.
 
-**ESLint**
+### **ESLint**
 
 [ESLint](http://eslint.org/) is a lint utility that will help us debug at coding time and write consistent code.
 
@@ -285,7 +285,7 @@ So now if you open `src/index.js` with an editor with eslint support \(like [Ato
 
 ![](/assets/eslint.png)
 
-**DevServer**
+### **DevServer**
 
 Finally, we will create a development server that will watch for changes in our files as we develop and serve them thru a web server, so we can see our work and debug as we code
 
