@@ -365,7 +365,8 @@ var compiler = webpack(config)
 var dev = webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath })
 var hot = webpackHotMiddleware(compiler)
 
-app.use(dev)app.use(hot)
+app.use(dev)
+app.use(hot)
 
 app.get('*', function (req, res) { 
   res.send(` 
