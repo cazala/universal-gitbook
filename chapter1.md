@@ -371,9 +371,17 @@ plugins: [
   new webpack.NoErrorsPlugin()
 ],
 ```
-remove index.html
 
-add script "dev-server": "node dev-server.js”
+You can also remove `src/index.js` if you still have it from previous step
+
+
+Finally, add a script to your package.json to start the dev-server 
+
+```
+"scripts": { "dev-server": "node dev-server.js", "build": "webpack --config webpack.config.js", "start": "node dist/bundle.js","test": "echo \"Error: no test specified\" && exit 1"
+},
+
+```
 
 test it
 
