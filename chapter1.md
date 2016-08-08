@@ -68,7 +68,7 @@ You are all set!
 [Webpack](https://webpack.github.io/) is a widely used module bundler, and the first thing to setup
 
 ```
-install webpack —-save-dev
+npm install webpack —-save-dev
 ```
 
 First create a `/src` and `/dist` directories
