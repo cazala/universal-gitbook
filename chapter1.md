@@ -191,7 +191,7 @@ Now `npm run build` and `npm run start` and you should see the _rest_ and _sprea
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/faf27892fb149f66a9dedac8cb9f425ebd689e28).
 
-**Tag**: to fast-forward to this step just clone [this tag](https://github.com/cazala/universal-app/releases/tag/Babel).
+**Fast-forward**: `git clone --branch dev-server https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
