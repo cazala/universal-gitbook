@@ -340,13 +340,13 @@ app.listen(port, (error) => {
 
 Add a `devtool` property to `webpack.config.js`
 
-```
+```js
 devtool: 'cheap-module-eval-source-map',
 ```
 
 Add `webpack-hot-middleware`'s client to your `webpack.entry` list
 
-```
+```js
 entry: [
   'webpack-hot-middleware/client',
   './src/index.js'
@@ -355,7 +355,7 @@ entry: [
 
 Add a public path to your `webpack.output`
 
-```
+```js
 output: { 
   path: path.resolve('dist'), 
   filename: 'bundle.js', 
