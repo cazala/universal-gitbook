@@ -61,7 +61,7 @@ You are all set!
 
 **Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/8eac4b551efca5ab61c3171ec0f68eb38475f724).
 
-**Fast-forward**: `git clone --branch dev-server https://github.com/cazala/universal-app.git --depth=1`
+**Fast-forward**: `git clone --branch init https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
