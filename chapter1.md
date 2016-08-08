@@ -256,7 +256,7 @@ npm install --save-dev eslint babel-eslint eslint-config-standard eslint-config-
 
 Add a `.eslintrc` file to configure the linter
 
-```json
+```js
 { 
   "env": { 
     "browser": true, 
