@@ -207,11 +207,12 @@ Add loaders to `webpack.config.js` so webpack loads all the `.css` and `.scss` f
 
 This way we will be able to `require(./styles.css)`
 
-+ **style-loader**: It adds a `<style>` tag to the `<head>` with the loaded style.
+* **style-loader**: It adds a `<style>` tag to the `<head>` with the loaded style.
 
-+ **css-loader**: It transform the css file with localized classnames \(aka CSS Modules\), applies minification and source-maps.
+* **css-loader**: It transform the css file with localized classnames \(aka CSS Modules\), applies minification and source-maps.
 
-+ **postcss-loader**: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass\/less similar experience.
+* **postcss-loader**: It lets us use transformation plugins like `autoprefixer`, `import`, `nested`, and `simple-vars`, to have a sass\/less similar experience.
+
 
 So lets add the loaders:
 
@@ -290,7 +291,7 @@ Yet again, another bigass npm install:
 npm install --save-dev eslint babel-eslint eslint-config-standard eslint-config-standard-react eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-watch
 ```
 
-Add a `.eslintrc` file to configure the linter
+Add a `.eslintrc` file to configure the linter, this is an example of the coding style that I use, but you can configure it to your needs, and there are tons of eslint plugins that you can choose from in npm:
 
 ```js
 { 
@@ -388,7 +389,7 @@ app.listen(port, (error) => {
 })
 ```
 
-Add a `devtool` property to `webpack.config.js`
+Add a `devtool` property to `webpack.config.js` to generate source maps
 
 ```js
 devtool: 'cheap-module-eval-source-map',
@@ -403,7 +404,7 @@ entry: [
 ],
 ```
 
-Add a public path to your `webpack.output`
+Add a public path to your `webpack.output`, that's where the Express will serve the bundle.
 
 ```js
 output: { 
