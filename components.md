@@ -54,5 +54,8 @@ export default App
 And the following as `src/components/App.css`
 
 ```css
-.header { font-size: 20px; color: blue;}
+.header { 
+  font-size: 20px; 
+  color: blue;
+}
 ```
