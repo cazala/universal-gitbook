@@ -75,6 +75,7 @@ const root = document.getElementById('root')
 
 ReactDOM.render(app, root)
 ```
+That will import our component, render it passing `'Hello Wolrd'` as its `text` property, and mount it on the `#root` elemento fo the document, using `react-dom`.
 
 In order for this line to work:
 
