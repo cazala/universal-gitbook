@@ -26,7 +26,7 @@ npm install react-loader --save-dev
 ```
 Add `react-hot` to your webpack loaders:
 
-```
+```js
 { 
   test: /\.js$/, 
   loaders: ['react-hot', 'babel'], 
