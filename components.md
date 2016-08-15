@@ -68,7 +68,7 @@ Now lets use this component and rendering using `react-dom`, save the following 
 import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from 'components'
+import App from 'components/App'
 
 const app = <App text='Hello Wolrd' />
 const root = document.getElementById('root')
