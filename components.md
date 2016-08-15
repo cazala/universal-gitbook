@@ -36,7 +36,7 @@ Add `react-hot` to your webpack loaders:
 
 So lets create a simple `App` component -> make a `components` folder inside `src`, and save the following file as `src/components/App.js`:
 
-```
+```js
 import React, { PropTypes } from 'react'
 import styles from './App.css'
 
