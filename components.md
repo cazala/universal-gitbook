@@ -65,10 +65,19 @@ So we just created a component that receives a `text` property which is a string
 Now lets use this component and rendering using `react-dom`, save the following as `src/index.js`
 
 ```js
-import 'babel-polyfill'import React from 'react'import ReactDOM from 'react-dom'import { App } from 'components'
+import 'babel-polyfill'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { App } from 'components'
 
-const app = <App text='Hello Wolrd' />const root = document.getElementById('root')
+const app = <App text='Hello Wolrd' />
+const root = document.getElementById('root')
 
 ReactDOM.render(app, root)
 ```
 
+In order for this line to work:
+
+```
+import { App } from 'components'
+```
