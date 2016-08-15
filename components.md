@@ -60,6 +60,8 @@ And the following as `src/components/App.css`
 }
 ```
 
+**NOTE**: there are different opinions about what folder structure to follow, some people separate components in individual folders, or by page in a nested fashion, or by feature, etc. I''ll let you figure out the folder structure that works best for you, I'll just drop all the `js` and `css` files in `components` by component name.
+
 So we just created a component that receives a `text` property which is a string, and renders a `<div>` with that text in blue.
 
 Now lets use this component and rendering using `react-dom`, save the following as `src/index.js`
@@ -99,3 +101,13 @@ resolve: {
 **Test It Out**:
 
 Now just `npm run dev-server` and open up `http://localhost:9999`, you should see a blue *Hello World* in the screen.
+
+---
+
+
+---
+
+## React Toolbox
+
+[React Toolbox](http://react-toolbox.com/) is a UI kit. We'll install is so we don't have to waste much time making the most basic components.
+
