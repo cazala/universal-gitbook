@@ -12,6 +12,7 @@ The purpose of this chapter is to create a few stateless views of our applicatio
 
 [React](https://facebook.github.io/react/) is a library for building user interfaces. Why so much hype about this technology? Here are a few key points:
 
-+ It is component-based: simple components can be encapsulated and composed into more complex UIs
++ **Component-based**: simple components can be encapsulated and composed into more complex UIs. 
 
-+ 
++ **Declarative**: components can be just a functions that take properties and return JSX, making them predicatble and easy to debug.
+
