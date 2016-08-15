@@ -14,5 +14,15 @@ The purpose of this chapter is to create a few stateless views of our applicatio
 
 + **Component-based**: simple components can be encapsulated and composed into more complex UIs. 
 
-+ **Declarative**: components can be just a functions that take properties and return JSX, making them predicatble and easy to debug.
++ **Declarative**: components can be just a functions that take properties and return JSX, making them predicatble and easy to debug, since data flows just in one way (in contrast to Angular's two-way bindings)
+
++ **Virtual DOM**: React holds a representation of the DOM and updates the actual DOM only when necessary by diff'ing the changes in the virtual DOM. This makes React very fast and also  allows it to be rendered on the client, the server, or on mobile apps thru [React Native](https://facebook.github.io/react-native/)
+
+Now go ahead and install these deps:
+
+```
+npm install react react-dom --save
+```
+
+So lets create a simple `App` component, create a `components` folder inside `src`, and save the following file as `App.js`:
 
