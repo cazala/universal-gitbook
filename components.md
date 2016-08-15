@@ -27,7 +27,11 @@ npm install react-loader --save-dev
 Add `react-hot` to your webpack loaders:
 
 ```
-{ test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/},
+{ 
+  test: /\.js$/, 
+  loaders: ['react-hot', 'babel'], 
+  exclude: /node_modules/
+},
 ```
 So lets create a simple `App` component, create a `components` folder inside `src`, and save the following file as `App.js`:
 
