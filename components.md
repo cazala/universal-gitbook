@@ -97,4 +97,4 @@ resolve: {
 
 **Test It Out**:
 
-Now just `npm run dev-server` and open up `http://localhost:9999`, you should see a blue Hello World in the screen.
+Now just `npm run dev-server` and open up `http://localhost:9999`, you should see a blue *Hello World* in the screen.
