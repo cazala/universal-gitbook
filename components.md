@@ -92,3 +92,12 @@ resolve: {
   ...
 }
 ```
+
+---
+
+**Test It Out**:
+
+
+Now just `npm run build` and then `npm run start`
+
+You should see a `hello world` in your console, and you will find that you 1 line `src/index.js` has become a 51 lines `dist/bundle.js`. Yay... right? This will pay off in the future tho, as we start plugging stuff into webpack.
