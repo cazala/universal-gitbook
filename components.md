@@ -59,3 +59,16 @@ And the following as `src/components/App.css`
   color: blue;
 }
 ```
+
+So we just created a component that receives a `text` property which is a string, and renders a `<div>` with that text in blue.
+
+Now lets use this component and rendering using `react-dom`, save the following as `src/index.js`
+
+```js
+import 'babel-polyfill'import React from 'react'import ReactDOM from 'react-dom'import { App } from 'components'
+
+const app = <App text='Hello Wolrd' />const root = document.getElementById('root')
+
+ReactDOM.render(app, root)
+```
+
