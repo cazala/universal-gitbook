@@ -82,7 +82,7 @@ In order for this line to work:
 import { App } from 'components'
 ```
 
-We'll need to add an alias for 'components' in our `webpack.resolve`:
+We'll need to add an alias for `components` in our `webpack.resolve`:
 
 ```js
 resolve: { 
