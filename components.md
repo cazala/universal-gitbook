@@ -34,5 +34,15 @@ Add `react-hot` to your webpack loaders:
 },
 ```
 
-So lets create a simple `App` component - make a `components` folder inside `src`, and save the following file as `App.js`:
+So lets create a simple `App` component -> make a `components` folder inside `src`, and save the following file as `src/components/App.js`:
+
+```
+import React, { PropTypes } from 'react'import styles from './App.css'
+
+const App = (props) => ( <div className={styles.header}> {props.text} </div>)
+
+App.propTypes = { text: PropTypes.string.isRequired}
+
+export default App
+```
 
