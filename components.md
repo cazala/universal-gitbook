@@ -78,6 +78,6 @@ ReactDOM.render(app, root)
 
 In order for this line to work:
 
-```
+```js
 import { App } from 'components'
 ```
