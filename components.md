@@ -109,5 +109,20 @@ Now just `npm run dev-server` and open up `http://localhost:9999`, you should se
 
 ## React Toolbox
 
-[React Toolbox](http://react-toolbox.com/) is a UI kit. We'll install is so we don't have to waste much time making the most basic components.
+[React Toolbox](http://react-toolbox.com/) is a UI kit. We'll install it so we don't have to waste much time making the most basic components.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
