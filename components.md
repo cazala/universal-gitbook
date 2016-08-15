@@ -33,5 +33,6 @@ Add `react-hot` to your webpack loaders:
   exclude: /node_modules/
 },
 ```
+
 So lets create a simple `App` component, create a `components` folder inside `src`, and save the following file as `App.js`:
 
