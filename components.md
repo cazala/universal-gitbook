@@ -80,7 +80,7 @@ That will import our component, render it passing `'Hello Wolrd'` as its `text` 
 In order for this line to work:
 
 ```js
-import { App } from 'components'
+import App from 'components/App'
 ```
 
 We'll need to add an alias for `components` in our `webpack.resolve`:
