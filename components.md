@@ -50,4 +50,4 @@ App.propTypes = {
 
 export default App
 ```
-And the following as 
+And the following as `src/components/App.css`
