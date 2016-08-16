@@ -85,7 +85,7 @@ In order for this line to work:
 import App from 'components/App'
 ```
 
-We'll need to add an alias for `components` in our `webpack.resolve`:
+We'll need to add an alias for `components` in our webpack config's `resolve.alias`:
 
 ```js
 resolve: { 
@@ -104,6 +104,9 @@ Now just `npm run dev-server` and open up `http://localhost:9999`, you should se
 
 ---
 
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/pull/1/commits/d11b8a90f856a391764331113c67962e82fc3b5c).
+
+**Fast-forward**: `git clone --branch react https://github.com/cazala/universal-app.git --depth=1`
 
 ---
 
@@ -111,10 +114,23 @@ Now just `npm run dev-server` and open up `http://localhost:9999`, you should se
 
 [React Toolbox](http://react-toolbox.com/) is a UI kit. We'll install it so we don't have to waste much time making the most basic components.
 
+```
+npm install --save react-toolbox
+npm install --save-dev sass-loader
+```
 
+We'll need `sass-loader` in order to use `React Toolbox` from webpack.
 
+So add it to the end of the loaders list for css files:
 
+```js
+{ test: /(\.scss|\.css)$/, loaders: ['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss', 'sass?sourceMap'] }
 
+```
+
+@import "~react-toolbox/lib/colors";
+
+$color-primary: #00A0DF !default;$color-primary-dark: #00607C !default;$color-accent: #77BC1F !default;$color-accent-dark: #009444 !default;$color-primary-contrast: #ffffff !default;$color-accent-contrast: #646469 !default;
 
 
 
