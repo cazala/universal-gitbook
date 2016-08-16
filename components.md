@@ -152,10 +152,22 @@ sassLoader: {
 },
 ```
 
+You are all set.
 
+---
 
+**Test It Out**:
 
+Add this line as your last import in `src/components/App`
 
+```js
+import Button from 'react-toolbox/lib/button'
+```
 
+And change your App component to this:
+
+```js
+const App = (props) => ( <Button label={props.text} />)
+```
 
 
