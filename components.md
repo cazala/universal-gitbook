@@ -144,7 +144,12 @@ $color-primary-contrast: #ffffff !default;
 $color-accent-contrast: #646469 !default;
 ```
 
+And just add this to `webpack.config.js` so the sass loader includes our `theme.css` variables:
 
+```js
+sassLoader: { data: '@import "' + path.resolve(__dirname, 'theme.scss') + '";' },
+
+```
 
 
 
