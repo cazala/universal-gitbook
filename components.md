@@ -176,8 +176,8 @@ Now `npm run dev-server` and you should see this time a button that reads *Hello
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/75e8f3a76a4d5666adb8c9958535a422c2e259de).
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/3e0b70e65ce45acdf3da5405369faab753aa4102).
 
-**Fast-forward**: `git clone --branch react https://github.com/cazala/universal-app.git --depth=1`
+**Fast-forward**: `git clone --branch react-toolbox https://github.com/cazala/universal-app.git --depth=1`
 
 ---
