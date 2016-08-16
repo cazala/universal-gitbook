@@ -172,4 +172,4 @@ const App = (props) => (
 )
 ```
 
-
+Now `npm run dev-server` and you should see this time a button that reads *Hello Wolrd*.
