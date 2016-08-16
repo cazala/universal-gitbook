@@ -150,7 +150,6 @@ And just add this to `webpack.config.js` so the sass loader includes our `theme.
 sassLoader: { 
   data: '@import "' + path.resolve(__dirname, 'theme.css') + '";' 
 },
-
 ```
 
 
