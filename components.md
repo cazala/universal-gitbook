@@ -104,7 +104,7 @@ Now just `npm run dev-server` and open up `http://localhost:9999`, you should se
 
 ---
 
-**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/pull/1/commits/d11b8a90f856a391764331113c67962e82fc3b5c).
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/75e8f3a76a4d5666adb8c9958535a422c2e259de).
 
 **Fast-forward**: `git clone --branch react https://github.com/cazala/universal-app.git --depth=1`
 
@@ -173,3 +173,17 @@ const App = (props) => (
 ```
 
 Now `npm run dev-server` and you should see this time a button that reads *Hello Wolrd*.
+
+---
+
+
+
+**Diff**: to see the diff for this step [click here](https://github.com/cazala/universal-app/commit/75e8f3a76a4d5666adb8c9958535a422c2e259de).
+
+
+
+**Fast-forward**: `git clone --branch react https://github.com/cazala/universal-app.git --depth=1`
+
+
+
+---
