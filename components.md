@@ -167,7 +167,9 @@ import Button from 'react-toolbox/lib/button'
 And change your App component to this:
 
 ```js
-const App = (props) => ( <Button label={props.text} />)
+const App = (props) => ( 
+  <Button label={props.text} />
+)
 ```
 
 
