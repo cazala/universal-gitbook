@@ -112,11 +112,11 @@ Now just `npm run dev-server` and open up `http://localhost:9999`, you should se
 
 ## React Toolbox
 
-[React Toolbox](http://react-toolbox.com/) is a UI kit. We'll install it so we don't have to waste much time making the most basic components.
+[React Toolbox](http://react-toolbox.com/) is a UI kit. We'll install it so we don't have to waste much time making the most basic components, but you don't actually need this to use React.
 
 ```
-npm install --save react-toolbox
-npm install --save-dev sass-loader
+npm install --save react-toolbox react-addons-update react-addons-css-transition-group normalize.css
+npm install --save-dev sass-loader node-sass
 ```
 
 We'll need `sass-loader` in order to use `React Toolbox` from webpack.
