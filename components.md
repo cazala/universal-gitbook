@@ -131,6 +131,8 @@ So add it to the end of the loaders list for css files:
 
 ```
 
+Also we can add a `theme.css` file at the root level of our app to set the colors of the variables:
+
 @import "~react-toolbox/lib/colors";
 
 $color-primary: #00A0DF !default;$color-primary-dark: #00607C !default;$color-accent: #77BC1F !default;$color-accent-dark: #009444 !default;$color-primary-contrast: #ffffff !default;$color-accent-contrast: #646469 !default;
