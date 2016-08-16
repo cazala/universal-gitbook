@@ -125,7 +125,8 @@ So add it to the end of the loaders list for css files:
 
 ```js
 { 
-  test: /(\.scss|\.css)$/, loaders: ['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss', 'sass?sourceMap'] }
+  test: /(\.scss|\.css)$/, loaders: ['style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss', 'sass?sourceMap'] 
+}
 
 ```
 
